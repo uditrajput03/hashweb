@@ -1,30 +1,72 @@
-# React + TypeScript + Vite
+# Hashweb
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Hashweb** is a local-only SHA-256 hashing web application built with TypeScript, JavaScript, HTML, and CSS. It allows you to compute the SHA-256 hash of any input directly in your browser without sending data to a server, ensuring complete privacy and security.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Demo](#demo)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Client-side SHA-256 hashing in the browser  
+- Fast, secure, and private – no network requests  
+- Clean and responsive user interface  
+- Built with TypeScript for type safety  
+- Minimal dependencies  
 
-- Configure the top-level `parserOptions` property like this:
+## Demo
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+>  https://uditrajput03.github.io/hashweb/
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v14 or later)
+- [npm](https://www.npmjs.com/)
+
+### Installation
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/uditrajput03/hashweb.git
+   cd hashweb
+   ```
+
+2. Install dependencies  
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+### Usage
+
+1. Start the development server  
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+2. Open your browser and navigate to `http://localhost:5173` (or the port specified).
+
+3. Enter any text in the input field to see the SHA-256 hash computed instantly.
+
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository  
+2. Create a new branch (`git checkout -b feature/my-feature`)  
+3. Make your changes and commit them (`git commit -m "Add my feature"`)  
+4. Push to your branch (`git push origin feature/my-feature`)  
+5. Open a pull request
+
+Please ensure your code follows the existing style and includes tests where applicable.
+
+## License
+
+This project is released under the [MIT License](LICENSE).
